@@ -326,9 +326,9 @@ samplesCommon::OnnxSampleParams initializeSampleParams(const samplesCommon::Args
     {
         params.dataDirs = args.dataDirs;
     }
-    params.onnxFileName = "mnist_with_coordconv.onnx";
-    params.inputTensorNames.push_back("conv1");
-    params.outputTensorNames.push_back("fc2");
+    params.onnxFileName = "lenet.onnx";
+    params.inputTensorNames.push_back("input");
+    params.outputTensorNames.push_back("output");
     params.dlaCore = args.useDLACore;
     params.int8 = args.runInInt8;
     params.fp16 = args.runInFp16;
